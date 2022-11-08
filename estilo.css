@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.square_table, .turn, .counter, .play_again, .voltar_atras{
+    display: none;
+}
+/* ---------------HEADER-------------------------------------------------------------------------------------- */
+header{
+    background-color: #555;
+    height: 9vh;
+}
+.title{
+    text-align: center;
+    margin: 2vh 0;
+    color: #fff;
+    font-weight: bold;
+}
+/* ---------------FIRST PAGE (OPTIONS)-------------------------------------------------------------------------------------- */
+.main_img{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.main_img img{
+    width: 60vw;
+    height: 40vh;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.player_player, .player_pc{
+    width: 50vw;
+    height: 8vh;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #48e;
+    color: #fff;
+    font-weight: bold;
+}
+.player_player:hover, .player_pc:hover{
+    background-color: rgb(123, 173, 247);
+    border-color: #555;
+    color: #555;
+}
+.play_again, .voltar_atras{
+    width: 20vw;
+    height: 6vh;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #48e;
+    color: #fff;
+    font-weight: bold;
+}
+/* ---------------TURN AND RESULT-------------------------------------------------------------------------------------- */
+.turn_article{
+    display: flex;
+    justify-content: center;
+}
+.turno_atual, .draw, .result{
+    font-family: 'Aref Ruqaa Ink', serif;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #48e;
+    font-size: 25px;
+    font-weight: bold;
+}
+/* ---------------CONTADOR-------------------------------------------------------------------------------------- */
+.contador{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #48e;
+    font-size: 20px;
+    width: 60vw;
+    margin: 10px 0;
+    position: relative;
+    left: 20vw;
+}
+.o, .empate{
+    border-left: 1px solid #48e;
+    padding-left: 2vw;
+}
+/* ---------------SECOND PAGE (GAME)-------------------------------------------------------------------------------------- */
+.square_table{
+    margin-bottom: 12vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 15vh);
+    grid-template-rows: repeat(3, 15vh);
+    align-content: center;
+    justify-content: center;
+}
+.container div{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square{
+    user-select: none;
+}
+.n0, .n1, .n3, .n4{
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+.n2, .n5{
+    border-bottom: 2px solid #000;
+}
+.n6, .n7{
+    border-right: 2px solid #000;
+}
+/* ----------------FOOTER----------------------------------------------------------------------------- */
+footer{
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    background-color: #555;
+    width: 100vw;
+    height: 8vh;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+.copyright{
+    margin: 2vh 0;
+}

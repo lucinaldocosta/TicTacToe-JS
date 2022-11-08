@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tic Tac Toe</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-----------------------HEADER--------------------------------------------------------------------------->
+    <header>
+        <h1 class="title">Tic Tac Toe</h1>
+    </header>
+<!-----------------------GAME BEGIN/OPTIONS--------------------------------------------------------------------------->
+    <section>
+        <article class="main_img">
+            <img src="./IMG/TicTacToe.svg" alt="Tic Tac Toe">
+        </article>
+        <article class="options">
+            <button class="play_again">Resetar Jogo</button>
+            <button class="voltar_atras">Voltar </button>
+            <button class="player_player">Dos Jogadores</button>
+            <button class="player_pc">Um Jogador</button>
+        </article>
+    </section>
+<!-----------------------TURN AND RESULT-------------------------------------------------------------------------->
+    <section class="turn">
+        <article class="turn_article">
+            <p class="turno_atual draw">Turno Jogador X</p>
+            <p class="result"></p>
+        </article>
+    </section>
+<!-----------------------COUNTER--------------------------------------------------------------------------->
+    <section class="counter">
+        <article class="contador">
+            <p class="x">X: </p><p class="x_contador">0</p>
+            <p class="o">O: </p><p class="o_contador">0</p>
+            <p class="empate">Empate: </p><p class="empate_contador">0</p>
+        </article>
+    </section>
+<!-----------------------SQUARE--------------------------------------------------------------------------->
+    <section class="square_table">
+        <div class="container">
+            <div class="square 0 n0"></div>
+            <div class="square 1 n1"></div>
+            <div class="square 2 n2"></div>
+            
+            <div class="square 3 n3"></div>
+            <div class="square 4 n4"></div>
+            <div class="square 5 n5"></div>
+            
+            <div class="square 6 n6"></div>
+            <div class="square 7 n7"></div>
+            <div class="square 8 n8"></div>
+        </div>
+    </section>
+<!-----------------------FOOTER--------------------------------------------------------------------------->
+    <footer>
+        <p class="copyright">2022 - LC Codes</p>
+    </footer>
+    <script src='tictactoe.js'></script> 
+</body>
+</html>
